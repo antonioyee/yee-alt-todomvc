@@ -22,16 +22,6 @@ var TodoStore   = require('../stores/TodoStore');
 var Parse       = require('parse').Parse;
 var ParseReact  = require('parse-react');
 
-/**
- * Retrieve the current TODO data from the TodoStore
- */
-function getTodoState() {
-    return {
-        allTodos: TodoStore.getState().todos,
-        areAllComplete: TodoStore.areAllComplete()
-    };
-}
-
 var TodoApp = React.createClass({
     mixins: [ParseReact.Mixin],
 
@@ -47,10 +37,6 @@ var TodoApp = React.createClass({
         }
     },
 
-    getInitialState: function() {
-        return getTodoState();
-    },
-
     render: function() {
         return (
             <div className="container">
@@ -61,7 +47,7 @@ var TodoApp = React.createClass({
 
                 <Header />
 
-                <MainSection allTodos={this.data.items} areAllComplete={this.state.areAllComplete} />
+                <MainSection allTodos={this.data.items} />
 
                 <Footer allTodos={this.data.items}  />
 
