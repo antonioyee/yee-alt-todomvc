@@ -9,10 +9,10 @@
  * @jsx React.DOM
  */
 
-var React = require('react');
-var ReactPropTypes = React.PropTypes;
-var TodoActions = require('../actions/TodoActions');
-var TodoTextInput = require('./TodoTextInput.react');
+var React           = require('react');
+var ReactPropTypes  = React.PropTypes;
+var TodoActions     = require('../actions/TodoActions');
+var TodoTextInput   = require('./TodoTextInput.react');
 
 var TodoItem = React.createClass({
 

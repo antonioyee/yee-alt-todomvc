@@ -14,14 +14,13 @@
  * the TodoStore and passes the new data to its children.
  */
 
-var Footer = require('./Footer.react');
-var Header = require('./Header.react');
+var Footer      = require('./Footer.react');
+var Header      = require('./Header.react');
 var MainSection = require('./MainSection.react');
-var React = require('react');
-var TodoStore = require('../stores/TodoStore');
-
-var Parse = require('parse').Parse;
-var ParseReact = require('parse-react');
+var React       = require('react');
+var TodoStore   = require('../stores/TodoStore');
+var Parse       = require('parse').Parse;
+var ParseReact  = require('parse-react');
 
 /**
  * Retrieve the current TODO data from the TodoStore

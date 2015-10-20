@@ -9,9 +9,9 @@
  * @jsx React.DOM
  */
 
-var React = require('react');
-var ReactPropTypes = React.PropTypes;
-var TodoActions = require('../actions/TodoActions');
+var React           = require('react');
+var ReactPropTypes  = React.PropTypes;
+var TodoActions     = require('../actions/TodoActions');
 
 var Footer = React.createClass({
 

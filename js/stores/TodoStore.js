@@ -1,6 +1,5 @@
-var alt = require('../alt')
-var merge = require('object-assign')
-var ParseReact = require('parse-react');
+var alt         = require('../alt')
+var ParseReact  = require('parse-react');
 var TodoActions = require('../actions/TodoActions')
 
 var todoStore = alt.createStore(class TodoStore {
@@ -79,7 +78,7 @@ var todoStore = alt.createStore(class TodoStore {
         }
         return true
     }
-    
+
 })
 
 module.exports = todoStore
